@@ -3,7 +3,7 @@
 
 <p align="center">
 <a href="https://arxiv.org/abs/2401.07951"><img  src="https://img.shields.io/badge/Arxiv-Paper-blue" ></a>
-<a href="https://drive.google.com/drive/folders/1N5IE7FEevMiVTxeS92d_fanmDH9_d2kY"><img  src="https://img.shields.io/badge/google_drive-CoSIS-green" ></a>
+<a href="https://drive.google.com/drive/folders/1N5IE7FEevMiVTxeS92d_fanmDH9_d2kY?usp=drive_link"><img  src="https://img.shields.io/badge/google_drive-CoSIS-green" ></a>
 </p>
 
 
@@ -19,15 +19,15 @@ Note that: Candidate A and B are not necessarily similar to the Reference.
 
 Our Annotations are based on the [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) Dataset.
 
-Our labelled triplets (CoSIS) can be found in our [Metadata](https://github.com/Zukang-Liao/Context-Sensitive-Image-Similarity/blob/main/metadata)
+Our labelled triplets (CoSIS) can be found in our [Metadata](https://github.com/Zukang-Liao/Context-Sensitive-Image-Similarity/blob/main/metadata) and [Google Drive CoSIS](https://drive.google.com/drive/folders/1N5IE7FEevMiVTxeS92d_fanmDH9_d2kY?usp=drive_link)
 
 
 | | CoSIS Training Set | Validation Set | Testing Set | Total |
-|-|-|-|-|-|
+|:---|:---|:---|:---|---:|
 | Number of triples | 8k | 12k | 10k | 30k |
 | Number of reference images | 8 | 1320 | 1010 | 2338 |
 | Image Source: [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) | Validation Set | Validation Set | Training Set | [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) |
-| Used for | Fine-tuning CS models | Building Ensemble Strategies | Testing Performance | |
+| Used for | Fine-tuning CS models, Testing Local Performance | Building Ensemble Strategies, Tuning Hyper-Parameters | Testing Global Performance | |
 
 
 
@@ -60,7 +60,7 @@ python dist_savefeats.py --cs_refid=2723 --cs_arch=resnet18
 | | #Indoor | #City | #Ocean | #Field | #Mountain | #Forest | #Flower | #Abstract |
 | :----:| :----: | :----: | :----: |  :----: |  :----: |  :----: |  :----: | :---:|
 |Model Arch| ResNet18 | ResNet18-Place365 | ViT-Lora | VGG16 | ViT-Lora | ViT-Lora | ViT-Lora | ResNet-Place365 |
-|Acc on its CS cluster| 88.0% | 87.5% | 89.5% | 90.1% | 90.7% | 86.2% | 86.8% | 83.8% |
+|Local Performance| 88.0% | 87.5% | 89.5% | 90.1% | 90.7% | 86.2% | 86.8% | 83.8% |
 
 3. Build your own Ensemble model:
 
