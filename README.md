@@ -11,7 +11,7 @@
 <h6 align="center"><sup>1</sup> University of Oxford, Department of Engineering Science</h6>
 
 ## Context-Sensitive-Image-Similarity (CoSIS Dataset)
-For a triple (Reference, Candidate A, Candidate B), we provide Two-Alternative Forced-Choice(2AFC) annotations:
+CoSIS Dataset consists of 30k labelled image triples. For a triple (Reference, Candidate A, Candidate B), we provide Two-Alternative Forced-Choice(2AFC) annotations.
 
 <img src="https://drive.google.com/uc?export=view&id=1zTETyLsvdBO_Smwj1XQxOxrTcG4fbQsF" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
@@ -20,6 +20,16 @@ Note that: Candidate A and B are not necessarily similar to the Reference.
 Our Annotations are based on the [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) Dataset.
 
 Our labelled triplets (CoSIS) can be found in our [Metadata](https://github.com/Zukang-Liao/Context-Sensitive-Image-Similarity/blob/main/metadata)
+
+
+| | CoSIS Training Set | Validation Set | Testing Set | Total |
+|-|-|-|-|-|
+| Number of triples | 8k | 12k | 10k | 30k |
+| Number of reference images | 8 | 1320 | 1010 | 2338 |
+| Image Source: [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) | Validation Set | Validation Set | Training Set | [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) |
+| Used for | Fine-tuning CS models | Building Ensemble Strategies | Testing Performance | |
+
+
 
 ## Fine-tune Your Context-Sensitive Models
 Specify reference id(s) and modelarch in dist_trainmodel.py.
