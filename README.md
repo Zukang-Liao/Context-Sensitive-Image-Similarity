@@ -13,7 +13,7 @@
 ## Context-Sensitive-Image-Similarity (CoSIS Dataset)
 For a triple (Reference, Candidate A, Candidate B), we provide Two-Alternative Forced-Choice(2AFC) annotations:
 
-<img src="https://drive.google.com/drive/folders/17Z-_Mtam7v2Wca_036b8EbLia517ZM7A"/>
+<img src="https://drive.google.com/uc?export=view&id=1zTETyLsvdBO_Smwj1XQxOxrTcG4fbQsF" style="width: 500px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 Note that: Candidate A and B are not necessarily similar to the Reference.
 
@@ -25,16 +25,17 @@ Our labelled triplets (CoSIS) can be found in our [Metadata](https://github.com/
 Specify reference id(s) and modelarch in dist_trainmodel.py.
 ```python
 refids = (2723,)
-modelarch = 'resnet18' # Availabel Archs: vgg11/13/16(bn), resnet18/34/50, resnet18-place365, cvnet, lora-vit, vit
+modelarch = 'resnet18' # Available Archs: vgg11/13/16(bn), resnet18/34/50, resnet18-place365, cvnet, lora-vit, vit
 ```
 
 Availabel Reference IDs:
 
-<img src="https://drive.google.com/drive/folders/17Z-_Mtam7v2Wca_036b8EbLia517ZM7A"/>
+<img src="https://drive.google.com/uc?export=view&id=1-PW_7PxMF2G-7HcU4VyBqWvQuUBHeaaj" style="width: 800px; max-width: 100%; height: auto" title="Click to enlarge picture" />
+
 
 Example of local improvement (whilst similar global performance from the beginning to the end of fine-tuning):
 
-<img src="https://drive.google.com/drive/folders/17Z-_Mtam7v2Wca_036b8EbLia517ZM7A"/>
+<img src="https://drive.google.com/uc?export=view&id=1O3nRDwvMI7I2EaPC-23JPx2UKzkaRf1b" style="width: 700px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ## Build an Ensemble of Your CS-Models
 1. Obtain embeddings of images in the [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) Dataset. Note that: in CoSIS(Ours) dataset, the annotations for CS model fine-tuning and Ensemble Strategies are based on images in the [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) Dataset Validation Set. And our annotations for testing the performance of the ensemble model are based on images in the [BG20K](https://github.com/JizhiziLi/GFM?tab=readme-ov-file#bg-20k) Dataset Training Set.
