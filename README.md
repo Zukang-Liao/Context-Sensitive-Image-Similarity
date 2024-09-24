@@ -81,10 +81,11 @@ python dist_cluster.py
 ## Citation
 Please consider citing the paper if your work is related to our CoSIS Dataset or Image Similarity:
 ```
-@article{liao2024image,
-  title={Image Similarity using An Ensemble of Context-Sensitive Models},
+@inproceedings{liao2024image,
+  title={Image Similarity Using an Ensemble of Context-Sensitive Models},
   author={Liao, Zukang and Chen, Min},
-  journal={arXiv preprint arXiv:2401.07951},
+  booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={1758--1769},
   year={2024}
 }
 ```
